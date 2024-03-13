@@ -3,7 +3,7 @@ with stg_dim_customers as (
         customer_id as nk_customer_id,
         first_name,
         last_name, 
-        concat(first_name, ' ', last_name),
+        concat(first_name, ' ', last_name) as full_name,
         email,
         phone,
         address
