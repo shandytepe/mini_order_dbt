@@ -39,7 +39,7 @@ final_fct_orders as (
         dp.sk_product_id,
         dc.sk_customer_id,
         dd.date_day as order_date,
-        sod.quantity as quantity,
+        sod.quantity as order_qty,
         sfo.status,
         {{ dbt_date.now() }} as created_at,
         {{ dbt_date.now() }} as updated_at
