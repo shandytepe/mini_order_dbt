@@ -1,0 +1,12 @@
+mini_order_dbt:
+  outputs:
+    dev:
+      dbname: mini_order
+      host: localhost
+      pass: mypassword
+      port: 5433
+      schema: mini_order_dbt
+      threads: 4
+      type: postgres
+      user: postgres
+  target: dev
